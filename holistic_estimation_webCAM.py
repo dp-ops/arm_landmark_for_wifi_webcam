@@ -1,15 +1,15 @@
-import cv2
+import cv2  
+
 import numpy as np
 import mediapipe as mp
 import os
-import time # Added for generating timestamps
+import time 
 
 from mediapipe.tasks import python
 from mediapipe.tasks.python import vision
 from mediapipe.tasks.python.vision import drawing_utils
 from mediapipe.tasks.python.vision import drawing_styles
 
-# --- Setup Paths ---
 script_dir = os.path.dirname(os.path.abspath(__file__))
 pose_model_path = os.path.join(script_dir, 'tasks/pose_landmarker_lite.task') 
 hand_model_path = os.path.join(script_dir, 'tasks/hand_landmarker.task')
